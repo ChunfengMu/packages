@@ -4,5 +4,6 @@ source "$PKGS_DIR/packages/security/mbedtls/Kconfig"
 source "$PKGS_DIR/packages/security/libsodium/Kconfig"
 
 source "$PKGS_DIR/packages/security/tinycrypt/Kconfig"
+source "$PKGS_DIR/packages/security/NeuG/Kconfig"
 
 endmenu

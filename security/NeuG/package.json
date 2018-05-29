@@ -1,0 +1,15 @@
+
+{
+    "name": "NeuG",
+    "description": "A random number generator implementation for RT-Thread",
+    "keywords": [
+        "NeuG"
+    ],
+    "license" : "GPLv3",
+    "readme": "A random number generator implementation for RT-Thread",
+    "site" : [
+    {"version" : "v1.0.0", "URL" : "https://github.com/ChunfengMu/NeuG.git", "filename" : "NeuG-1.0.0.zip","VER_SHA" : "051e4e090825a34e78cdea483448745a7728f27e"},
+
+    {"version" : "latest_version", "URL" : "https://github.com/ChunfengMu/NeuG.git", "filename" : "NeuG.zip", "VER_SHA" : "master"}
+    ]
+}

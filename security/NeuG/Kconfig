@@ -1,0 +1,44 @@
+
+# Kconfig file for package NeuG
+config PKG_USING_NEUG
+    bool "NeuG: A random number generator implementation for RT-Thread"
+    default n
+    select PKG_USING_TINYCRYPT
+    select TINY_CRYPT_SHA256
+
+if PKG_USING_NEUG
+
+    config PKG_USING_NEUG_EXAMPLE
+        bool "Enable a NeuG example"
+        default n
+
+    config PKG_NEUG_PATH
+        string
+        default "/packages/security/NeuG"
+
+    choice
+        prompt "NeuG version"
+        help
+            Select the NeuG version
+
+        config PKG_USING_NEUG_V100
+            bool "v1.0.0"
+
+        config PKG_USING_NEUG_LATEST_VERSION
+            bool "latest_version"
+    endchoice
+    
+    if PKG_USING_NEUG_V100
+        config PKG_NEUG_VER
+        string
+        default "v1.0.0"
+    endif
+   
+    if PKG_USING_NEUG_LATEST_VERSION
+       config PKG_NEUG_VER
+       string
+       default "latest_version"
+    endif
+
+endif
+
